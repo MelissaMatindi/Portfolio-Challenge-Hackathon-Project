@@ -1,1 +1,134 @@
+/* Reset some default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfcfc;
+  color: #2b2b2b;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Overall layout container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(135deg, #5a189a, #9d4edd);
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-bottom: 5px solid #7b2cbf;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 2rem;
+  color: #5a189a;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0aaff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* About Section */
+#about {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+/* Skills List */
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#skills li::before {
+  content: "💻 ";
+  margin-right: 0.5rem;
+  color: #7b2cbf;
+}
+
+/* Projects and Experience Cards */
+.project, .experience {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #7b2cbf;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover, .experience:hover {
+  transform: scale(1.01);
+}
+
+.project h3, .experience h3 {
+  color: #3c096c;
+  margin-bottom: 0.5rem;
+}
+
+.project p, .experience p {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f3f0ff;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #e0aaff;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #5a189a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
 
